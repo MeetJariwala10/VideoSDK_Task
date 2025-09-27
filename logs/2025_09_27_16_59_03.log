@@ -1,0 +1,3 @@
+{"query": "Hey.", "best_score": 0.4801037013530731, "reason": "No docs above similarity threshold", "timestamp": "2025-09-27T11:29:19.947552Z", "level": "warning", "event": "RAG MISS"}
+{"query": "Hello?", "best_score": 0.49844443798065186, "reason": "No docs above similarity threshold", "timestamp": "2025-09-27T11:29:57.533062Z", "level": "warning", "event": "RAG MISS"}
+{"query": "Hey.", "best_score": 0.48083946108818054, "reason": "No docs above similarity threshold", "timestamp": "2025-09-27T11:30:10.181933Z", "level": "warning", "event": "RAG MISS"}

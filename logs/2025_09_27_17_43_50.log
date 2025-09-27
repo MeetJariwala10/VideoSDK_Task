@@ -1,0 +1,1 @@
+{"query": "What is Blue whale?", "best_score": 0.6446760892868042, "reason": "No docs above similarity threshold", "timestamp": "2025-09-27T12:14:07.437641Z", "level": "warning", "event": "RAG MISS"}

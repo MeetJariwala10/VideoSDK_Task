@@ -1,7 +1,8 @@
-# custom_logger.py
-"""
-Structured JSON logger using structlog.
-Logs only your custom events, silencing noisy libraries.
+"""Lightweight structured logger for the project.
+
+This module configures a file-based JSON logger using `structlog` so that
+our custom events (like `RAG HIT`/`RAG MISS`) are captured cleanly in the
+`logs/` directory. It also silences noisy third-party libraries.
 """
 
 import os
@@ -10,7 +11,8 @@ from datetime import datetime
 import structlog
 
 class CustomLogger:
-    def __init__(self, log_dir="logs"):
+    def __init__(self, log_dir: str = "logs"):
+        """Create a new logger that writes to a timestamped file in `log_dir`."""
         self.logs_dir = os.path.join(os.getcwd(), log_dir)
         os.makedirs(self.logs_dir, exist_ok=True)
 
@@ -18,7 +20,8 @@ class CustomLogger:
         log_file = f"{datetime.now().strftime('%Y_%m_%d_%H_%M_%S')}.log"
         self.log_file_path = os.path.join(self.logs_dir, log_file)
 
-    def get_logger(self, name=__file__):
+    def get_logger(self, name: str = __file__):
+        """Return a structlog logger that writes JSON lines to our log file."""
         logger_name = os.path.basename(name)
 
         # Only file output; no console
@@ -51,7 +54,7 @@ class CustomLogger:
         return structlog.get_logger(logger_name)
 
 
-# --- Example Usage ---
+# --- Example (manual) usage ---
 if __name__ == "__main__":
     pass
     # logger = CustomLogger().get_logger(__file__)
