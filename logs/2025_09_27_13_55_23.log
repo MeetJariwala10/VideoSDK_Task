@@ -1,0 +1,4 @@
+{"query": "What do you mean by fintech company?", "reason": "No documents passed similarity threshold", "scores": [0.569, 0.581, 0.581, 0.581, 0.581], "timestamp": "2025-09-27T08:25:42.906239Z", "level": "warning", "event": "RAG MISS"}
+{"query": "attention is all you need.", "reason": "No documents passed similarity threshold", "scores": [0.259, 0.259, 0.259, 0.259, 0.259], "timestamp": "2025-09-27T08:26:10.038803Z", "level": "warning", "event": "RAG MISS"}
+{"query": "Deep learning.", "reason": "No documents passed similarity threshold", "scores": [0.274, 0.274, 0.274, 0.274, 0.274], "timestamp": "2025-09-27T08:26:48.005274Z", "level": "warning", "event": "RAG MISS"}
+{"query": "Elon Musk.", "reason": "No documents passed similarity threshold", "scores": [0.258, 0.258, 0.258, 0.258, 0.258], "timestamp": "2025-09-27T08:27:10.231666Z", "level": "warning", "event": "RAG MISS"}

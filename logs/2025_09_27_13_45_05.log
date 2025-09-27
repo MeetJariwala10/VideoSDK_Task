@@ -1,0 +1,1 @@
+{"query": "Who is Elon Musk?", "reason": "No documents passed similarity threshold", "scores": [0.289, 0.321, 0.327, 0.347, 0.383], "timestamp": "2025-09-27T08:15:27.427166Z", "level": "warning", "event": "RAG MISS"}
