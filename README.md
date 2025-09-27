@@ -1,5 +1,7 @@
 # VideoSDK Agents – Voice AI Agent with Local RAG
 
+> Demo: Watch the project in action here — https://drive.google.com/drive/folders/1VH1eNnr01HRomqC1A9wgEOZuuSDyhgmx?usp=drive_link
+
 This project implements a voice AI agent using the VideoSDK Agents SDK with a Cascading Pipeline (VAD → STT → LLM → TTS → Turn Detection) and a local RAG pipeline (Chroma + Mistral embeddings). The agent:
 
 - Listens to the user via STT.
